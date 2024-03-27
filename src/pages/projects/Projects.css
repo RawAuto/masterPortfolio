@@ -75,6 +75,16 @@
   margin-top: 60px;
 }
 
+.opensource-charts-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem 1rem;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 60px;
+}
+
 @media (max-width: 1380px) {
   .projects-heading-text {
     font-size: 50px;

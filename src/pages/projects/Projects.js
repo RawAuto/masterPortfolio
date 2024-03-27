@@ -15,6 +15,8 @@ import {
 import ProjectsData from "../../shared/opensource/projects.json";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
+import OpensourceCharts from "../../containers/opensourceCharts/OpensourceCharts";
+import PullRequests from "../../containers/pullRequests/PullRequests";
 
 class Projects extends Component {
   render() {
@@ -91,7 +93,12 @@ class Projects extends Component {
             return <PublicationCard pub={pub} theme={theme} />;
           })}
         </div>
-
+        <div className="opensource-charts-div">
+          <OpensourceCharts theme={this.props.theme} />
+        </div>
+        <div className="opensource-prs-div">
+          <PullRequests theme={this.props.theme} />
+        </div>
         <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
         <TopButton theme={this.props.theme} />
       </div>
